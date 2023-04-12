@@ -1,0 +1,6 @@
+framework module SwiftUIValueSlider {
+  umbrella header "SwiftUIValueSlider-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  SwiftUIValueSlider
 //
-//  Created by sandy on 04/12/2023.
-//  Copyright (c) 2023 sandy. All rights reserved.
+//  Created by sanhee16 on 04/12/2023.
+//  Copyright (c) 2023 sanhee16. All rights reserved.
 //
 
 import UIKit

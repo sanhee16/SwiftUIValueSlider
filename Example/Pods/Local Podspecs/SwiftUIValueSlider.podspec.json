@@ -1,0 +1,22 @@
+{
+  "name": "SwiftUIValueSlider",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftUIValueSlider.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sandy/SwiftUIValueSlider",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sandy": "sandy@studio-sj.co"
+  },
+  "source": {
+    "git": "https://github.com/sandy/SwiftUIValueSlider.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "SwiftUIValueSlider/Classes/**/*"
+}
