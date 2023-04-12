@@ -18,6 +18,7 @@
 		3C051450E265E6D790C6ABB881A5BB4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
+		6324E86529E65CB900BEF1D3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324E86429E65CB900BEF1D3 /* Extension.swift */; };
 		640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67C07F483E8776F7C821FF1524E55801 /* Pods-SwiftUIValueSlider_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7B6DB20B0AE7F75F8C7BB933CC4AEF /* Pods-SwiftUIValueSlider_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -92,6 +93,7 @@
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6324E86429E65CB900BEF1D3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = SwiftUIValueSlider/Classes/Extension.swift; sourceTree = "<group>"; };
 		6364DFF157907640E4468B53D95F1524 /* SwiftUIValueSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftUIValueSlider.debug.xcconfig; sourceTree = "<group>"; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 				AEE64D6B9BF3526D14F9543C35AF0507 /* SwiftUIValueSlider.swift */,
 				73E37E66B173EFEFA5A6438CED59A09E /* Pod */,
 				C9E0796BE651F7C970BCBE02E60274A1 /* Support Files */,
+				6324E86429E65CB900BEF1D3 /* Extension.swift */,
 			);
 			name = SwiftUIValueSlider;
 			path = ../..;
@@ -575,6 +578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6324E86529E65CB900BEF1D3 /* Extension.swift in Sources */,
 				729CAD915BC715260185BC80A2233A02 /* SwiftUIValueSlider.swift in Sources */,
 				CCDF72AFFFED60BBECA1690ABA74A3C6 /* SwiftUIValueSlider-dummy.m in Sources */,
 			);
