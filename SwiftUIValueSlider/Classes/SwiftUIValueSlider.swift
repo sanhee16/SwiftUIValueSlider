@@ -1,5 +1,6 @@
-
 import SwiftUI
+import Foundation
+
 
 public struct ValueSliderView: View {
     @Binding var value: Double
@@ -304,7 +305,7 @@ public extension ValueSliderView {
     }
 }
 
-extension Color {
+public extension Color {
     init(hex string: String, opacity: CGFloat? = nil) {
         var string: String = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         if string.hasPrefix("#") {
@@ -393,18 +394,18 @@ extension Color {
         }
     }
     
-    public static let gray80: Color = Color(hex: "#454545", opacity: 0.8)
-    public static let gray60: Color = Color(hex: "#454545", opacity: 0.6)
-    public static let gray40: Color = Color(hex: "#454545", opacity: 0.4)
-    public static let gray30: Color = Color(hex: "#454545", opacity: 0.3)
-    public static let gray20: Color = Color(hex: "#454545", opacity: 0.2)
+    static let gray80: Color = Color(hex: "#454545", opacity: 0.8)
+    static let gray60: Color = Color(hex: "#454545", opacity: 0.6)
+    static let gray40: Color = Color(hex: "#454545", opacity: 0.4)
+    static let gray30: Color = Color(hex: "#454545", opacity: 0.3)
+    static let gray20: Color = Color(hex: "#454545", opacity: 0.2)
 }
 
-extension Font {
-    public static let kr11r: Font = .system(size: 11, weight: .regular, design: .default)
+public extension Font {
+    static let kr11r: Font = .system(size: 11, weight: .regular, design: .default)
 }
 
-extension View {
+public extension View {
     func rectReader(_ binding: Binding<CGRect>, in space: CoordinateSpace) -> some View {
         self.background(GeometryReader { (geometry) -> AnyView in
             let rect = geometry.frame(in: space)
