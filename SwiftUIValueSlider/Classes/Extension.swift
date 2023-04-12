@@ -13,7 +13,7 @@ public extension ValueSliderView {
         slider.valueFormat = valueFormat
         slider.isHidden = isHidden
         slider.fontColor = fontColor
-        slider.font = font ?? .kr11r
+        slider.font = font ?? Font.kr11r
         return slider
     }
     

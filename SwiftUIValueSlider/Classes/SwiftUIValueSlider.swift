@@ -10,12 +10,12 @@ public struct ValueSliderView: View {
     @State var lastCoordinateValue: CGFloat = 0.0
     var sliderRange: ClosedRange<Double> = 0...10
     var thumbColor: Color = .yellow
-    var minTrackColor: Color = .gray80
-    var maxTrackColor: Color = .gray40
+    var minTrackColor: Color = Color.gray80
+    var maxTrackColor: Color = Color.gray40
     var thumbSize: CGFloat = 20.0
     var thumbPadding: CGFloat = 5
     var _barHeight: CGFloat = 10.0
-    var font: Font = .kr11r
+    var font: Font = Font.kr11r
     var fontColor: Color = .black
     
     var barHeight: CGFloat {
@@ -54,7 +54,7 @@ public struct ValueSliderView: View {
         ZStack {
             //MaxBar
             VStack(alignment: .trailing, spacing: 0) {
-                RoundedCorners(color: isDisable ? .gray60 : maxTrackColor, tl: 0.0, tr: radius, bl: 0.0, br: radius)
+                RoundedCorners(color: isDisable ? Color.gray60 : maxTrackColor, tl: 0.0, tr: radius, bl: 0.0, br: radius)
                     .frame(width: width - pos, height: barHeight, alignment: .trailing)
             }
             .frame(width: width, height: barHeight, alignment: .trailing)
@@ -62,7 +62,7 @@ public struct ValueSliderView: View {
             
             //MinBar
             VStack(alignment: .leading, spacing: 0) {
-                RoundedCorners(color: isDisable ? .gray60 : minTrackColor, tl: radius, tr: 0.0, bl: radius, br: 0.0)
+                RoundedCorners(color: isDisable ? Color.gray60 : minTrackColor, tl: radius, tr: 0.0, bl: radius, br: 0.0)
                     .frame(width: pos, height: barHeight)
             }
             .frame(width: width, height: barHeight, alignment: .leading)
@@ -111,7 +111,7 @@ public struct ValueSliderView: View {
             } else {
                 HStack {
                     RoundedRectangle(cornerRadius: radius)
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color.gray)
                         .frame(width: thumbSize, height: thumbSize)
                         .offset(x: pos)
                     Spacer()
@@ -123,7 +123,7 @@ public struct ValueSliderView: View {
                     if !isDisable {
                         Text(String(format: valueFormat, $value.wrappedValue))
                             .font(font)
-                            .foregroundColor(isDisable ? .gray60 : fontColor)
+                            .foregroundColor(isDisable ? Color.gray60 : fontColor)
                             .offset(x: pos - ($textPos.wrappedValue.size.width/2 - thumbSize/2))
                             .padding(.bottom, thumbSize * 2 + 6)
                             .rectReader($textPos, in: .global)
@@ -155,7 +155,7 @@ public struct ValueSliderView: View {
                     } else {
                         Text(String(format: valueFormat, $value.wrappedValue))
                             .font(font)
-                            .foregroundColor(isDisable ? .gray60 : fontColor)
+                            .foregroundColor(isDisable ? Color.gray60 : fontColor)
                             .offset(x: pos - ($textPos.wrappedValue.size.width/2 - thumbSize/2))
                             .padding(.bottom, thumbSize * 2 + 6)
                             .rectReader($textPos, in: .global)
