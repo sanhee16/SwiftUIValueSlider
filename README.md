@@ -29,7 +29,7 @@ pod 'SwiftUIValueSlider'
 ### Swift Package Manager
 
 ```swift
-.package(name: "SwiftUISlider", url: "https://github.com/sanhee16/SwiftUISlider.git", from: "0.1.0")
+.package(name: "SwiftUIValueSlider", url: "https://github.com/sanhee16/SwiftUIValueSlider.git", from: "0.1.0")
 ```
 
 ## Author
