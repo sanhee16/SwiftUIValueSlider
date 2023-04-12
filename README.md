@@ -32,14 +32,6 @@ pod 'SwiftUIValueSlider'
 .package(name: "SwiftUIValueSlider", url: "https://github.com/sanhee16/SwiftUIValueSlider.git", from: "0.1.0")
 ```
 
-## Author
-
-sanhee16, sinhioa20@gmail.com
-
-## License
-
-SwiftUIValueSlider is available under the MIT license. See the LICENSE file for more info.
-
 ## Guide
 
 <img src='./resources/main.png' width='40%'> <br/><br/>
@@ -154,3 +146,13 @@ ValueSliderView($value)
     .sliderFrame(width: gp.size.width - 40.0, height: 10.0)
     .frame(width: gp.size.width, alignment: .center)
 ```
+
+
+
+## Author
+
+sanhee16, sinhioa20@gmail.com
+
+## License
+
+SwiftUIValueSlider is available under the MIT license. See the LICENSE file for more info.
